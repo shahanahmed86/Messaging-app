@@ -13,10 +13,10 @@ class Flex extends React.Component {
             <div style={{ width: '100%' }}>
                 <div className="header">
                     <div className="button">
-                        <Button variant="contained" color="primary" href="#contained-buttons" className="join">
+                        <Button variant="contained" href="#contained-buttons" className="join">
                             Join Board
                         </Button>
-                        <Button variant="contained" color="primary" href="#contained-buttons">
+                        <Button variant="contained" href="#contained-buttons">
                             Start New Topic
                        </Button>
                     </div>
@@ -25,8 +25,8 @@ class Flex extends React.Component {
                     </div>
                 </div>
 
-                <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper">
-                    <Box className="boxes B1 scrollbar force-overflow" p={1} bgcolor="grey.100">
+                <Box display="flex" flexDirection="row" p={1} m={1}>
+                    <Box className="boxes B1 scrollbar force-overflow" p={1} bgcolor="rgb(213, 238, 227)">
                         <p className="Head"> Discussion topic</p>
                         <table className="Discussion">
                             <tr>
@@ -69,52 +69,59 @@ class Flex extends React.Component {
                                 </td>
                             </tr>
                         </table>
-                        <input className="type" type="text" placeholder="Type here" />
+                        <div className="msg_type">
+                            <input className="type" type="text" placeholder="Type here" />
+                        </div>
                         <button className="enter">Enter</button>
                         <br />
                         <button className="board">Board 1</button>
-                        <button>*</button>
+                        <button>+</button>
                     </Box>
 
-                    <Box className="boxes B2 scrollbar force-overflow" p={1} bgcolor="grey.100">
-                        <p className="Head">User in Discussion</p>
+                    <Box className="boxes B2 scrollbar force-overflow" p={1} bgcolor="rgb(213, 238, 227)">
+                        <p className="Head">Users Active</p>
                         <table>
                             <tr>
                                 <th>
                                     Sender
-                                    </th>
+                                </th>
                             </tr>
                             <tr>
                                 <td>
+                                <img src="https://ptetutorials.com/images/user-profile.png" alt="Hyder" />
                                     Hyder
-                                    </td>
+                                 </td>
                             </tr>
                             <tr>
                                 <td>
+                                <img src="https://ptetutorials.com/images/user-profile.png" alt="Faisal" />
                                     Faisal
-                                    </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
+                                <img src="https://ptetutorials.com/images/user-profile.png" alt="Rehan" />
                                     Rehan
-                                    </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
+                                <img src="https://ptetutorials.com/images/user-profile.png" alt="Kareem" />
                                     Kareem
-                                    </td>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
+                                <img src="https://ptetutorials.com/images/user-profile.png" alt="Adeel" />
                                     Adeel
-                                    </td>
+                                </td>
                             </tr>
                         </table>
                     </Box>
 
-                    <Box className="boxes B3" p={1} bgcolor="grey.100">
+                    <Box className="boxes B3 scrollbar force-overflow" p={1} bgcolor="rgb(213, 238, 227)">
                         <p className="Head">Message List</p>
-                        <div className="mesgs msg_history">
+                        <div className="mesgs">
                             <div className="incoming_msg">
                                 <div className="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil" /> </div>
                                 <div className="received_msg">

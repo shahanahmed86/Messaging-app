@@ -51,9 +51,14 @@ td, th {
     border-radius: 10px;
 }
 .type {
-    width: 570px;
     height : 25px;
     border-radius: 5px;
+    width: 100%;
+}
+.msg_type {
+  display: inline-block;  
+  width: 450px;
+    
 }
 .enter {
     height : 30px;
@@ -74,12 +79,12 @@ td, th {
 	float: left;
 	height: 300px;
 	background: #F5F5F5;
-	overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .force-overflow
 {
   min-height: 550px;
-  overflow-y: scroll;
 }
 
 /*  */
@@ -87,6 +92,7 @@ td, th {
 img {
     display: inline-block;
     width: 6%;
+    margin-right: 9px;
   }
   .received_msg {
     display: inline-block;
@@ -123,12 +129,15 @@ img {
     padding: 5px 10px 5px 12px;
     width:100%;
   }
-  .outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+  .outgoing_msg{ 
+    overflow:hidden; 
+    margin:26px 0 26px;
+    padding-right: 35px;
+  }
   .sent_msg {
     float: right;
     width: 46%;
   }
-
   .input_msg_write input {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
@@ -137,8 +146,10 @@ img {
     min-height: 48px;
     width: 100%;
   }
-  
-  .type_msg {border-top: 1px solid #c4c4c4;position: relative;}
+    .type_msg {
+      border-top: 1px solid #c4c4c4;
+      position: relative;
+    }
   .msg_send_btn {
     background: #05728f none repeat scroll 0 0;
     border: medium none;
@@ -151,11 +162,6 @@ img {
     right: 0;
     top: 11px;
     width: 33px;
-  }
-  .messaging { padding: 0 0 50px 0;}
-  .msg_history {
-    height: 493px;
-    overflow-y: auto;
   }
   
 
